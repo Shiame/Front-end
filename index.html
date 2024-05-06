@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car repair App</title>
+    <link rel="icon" type="image/png" href="imgs/logo-removebg.png">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <a  href="https://icons8.com/icon/24884/consultation">Consultation</a> icon by <a href="https://icons8.com">Icons8</a>
+
 </head>
 <body>
      <header>
@@ -13,10 +16,10 @@
 
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
-            <li><a href="" >Home</a></li>
-            <li><a href="" >Services</a></li>
-            <li><a href="" >About Us</a></li>
-            <li><a href="" >Contact</a></li>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#services" >Services</a></li>
+            <li><a href="#about" >About Us</a></li>
+            <li><a href="#footer" >Contact</a></li>
         </ul>
         <div class="hedear-btn">
             <a href="#" class="sign-up">Sign Up</a>
@@ -29,9 +32,9 @@
     <section class="home" id="home">
         <div class="text">
             <h1>AUTO <span>MAINTENANCE</span> <br> & <span>REPAIR</span> SERVICE</h1>
-            <p> We are our trusted partner in keeping your vehicle in top condition. With <br> over <span> 8</span> 
-                years of experience in the automotive industry, our skilled <br> engineers 
-                and mechanics are dedicated to providing you <br> with the best service possible
+            <p> We are our trusted partner in keeping your vehicle in top condition.<br> With  over <span> 8</span> 
+                years of experience in the automotive industry, <br>our skilled  engineers 
+                and mechanics are dedicated <br>to providing you  with the best service possible
             </p>
             <a href="#" class="btn">Booking NOW <i class='bx bx-right-arrow-alt'></i> </a>
         </div>
@@ -58,6 +61,133 @@
         </div>
     </section>
 
+    <!--Services-->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>OUR SERVICES</span>
+           <h1>Explore Our Best Services</h1>
+
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/pexels-olly-3807329.jpg">
+                </div>
+                
+                <h3>Maintenance</h3>
+                <p>Keep your vehicle running smoothly with our expert maintenance service. From fluid checks to tire rotations, we've got you covered for a hassle-free driving experience</p>
+            </div>
+            <div class="box">
+                <div class="box-img"><img src="imgs/pexels-olly-3807329.jpg"></div>
+                
+                <h3>Repair</h3>
+                <p>Experience top-notch repair service now. Our skilled team is ready to tackle  any automotive issue, ensuring your vehicle gets back on the road in no time.</p>
+            </div>
+            <div class="box">
+                <div class="box-img"><img src="imgs/computer_diagnostics.jpeg"></div>
+                
+                <h3>Car State Tracking</h3>
+                <p>Stay informed every step of the way with our advanced car  state tracking and repair progress monitoring service. </p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!--Work Progress Section-->
+    <section class="progress-container" id="progress-container">
+        <div class="heading">
+            <span>OUR WORK PROGESS</span>
+           <h1>We Complete Every Step Carefully</h1>
+           <p>Trust us to keep your automobile running soothly and reliably</p>
+        </div>
+    <div class="progress">
+        <ul>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEeElEQVR4nO1bO2/TUBQ+iWCBNdU5SQuoFeW5sFEWHhOvH4BEM7RIRFAqxlaVkPBGeUlILMAEFDZUKBVtfFMWFIZKDNCNFhi7QmEoDGnQjexy4zi2r+1rOyFHOlKTxtc+3/nued0EQJ2kAeAYAIwYetR477+QIwDwCQCqFv0IAAPQ5jIAAL9sjDf1JwAchjaVlMXz3wHgoaE/hPdXAGALtKCkASAPAONN9J7F+F7h2j4LCPcd1skbYCZO8g7UtuoDm+sfSVw/CAkULaABMgDye0UqfQBQcKAl15LwgGUAmGyi55tQOGUA0+y6srB+yeVZCpYtFkiGAWBdwjuqPCTDsKrxzENheH5d8sZJAcAEIRATCsJiSw70lKWoH/W6xSaNZzU/ezEs1DWJz6pWmWcJxEZNYiGZKB5UB5MIQMolioelzbJI7AAkSToAQAwMSBtxIAm1euxBcBD+QwA0yZu6dY8yamVdSwCQV5gaOwCAYgakbehbciiF7QJjmHWDtTZQDkBeQfUWpnQAAMUMSNnQt+zQrdmVr50sAJ0sAKrSYGhFmaawDlCZBcy1vXSObVkKhyaaj3lAYNSTJFqrzAPeEu0qIZ5liKMMcdzQUUZ0ppTN7mxLAOYRDzLEu4zoGyOqOqlO9IUR3WJE+1segGI2u08nmtGJNtwMt9EKQ5xmmUx/2L3AeIhqO1S5DpDWia4xxD8+DK9XxN864ljVJV5pIfYCgXoHHXE7Q5wLbHjj1ph5nc1uSzQAOjee6H3YxgtseNcMBE2iF1Ay+ua0V+F5Oybwe3kFIDKp7XnFxm+CgDiWKABKudweHqyiAoDfaz6X25sYAHSimciM/8eCF3GlwbyY+niR4zPPO+3zDYY4xdVh7YrIAi3iLCBG/jsKvHvVXJ8hPnMA6kbsAHgpbyW9P2nZXs8dgPocRxrcTH28eQk5uD0WK74i4rlaSexwzUJPT7cTAEql1tWFR/s3HwC2Cmsf95RZstmTsQFgtLFuDc2UsY+dPLnIq0hzXT2XO8SI1rwAVyK6HBsAOuKEi1efmp8tIl6wA4Hv4zmiLmHNXka0KsGciSjTYF0KdAOAe18EzAaEVW6w+X8OBAdEcutMRJ0FxBR4xW0LcKObgLDGqW5ppBalYwfRSGwAeAyCDSAwxOEi4gnzNQ9+fhspneh0lGmwbpAqkQYbQDCFpz0d8Ykf47nOdXf3OAGgXHSir0FA4IWPX+N1omVznfgAQLwt8cC8rr8kGD/i13ivpbByWSA6INkMVXh5a2iQJqrCh64Q01C0Lh0yxJdBPKmyHc4raobqG6JMpj+pA5F8FAB4KopiGomlFA1FG84Va0NRolnlxhO9sjsj0OIKgqLwkTVDLCdpLB65GCXtrArPOx2MFAQAlhQehXnKDLWjMR4TQgiMOuK6l6OxPp+/GVIaGI1x+bTbVKeJVniqK3Z17fbKvqEEgGD7jRN+1M2IbjKiFQ9UX+blsVjkyEiv8eMjVUdhUpnBToq53A7ewdXKYOMLEvzvEtEps7GRlb8JQg6s3p1DbgAAAABJRU5ErkJggg==">                <br><i class='bx bx-check' style='color:#fff'  ></i>
+                <p>Problem <br>Consultation </p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO2ZUWgUVxSG/01MDHRbV1P3nN0o4oOpbCFIsZaCgg8VivZBaklqHyI2Ae2DtVAotIVYaW2x+NSHUqTQF41pscUq1Ny7ukkLPmUTqSGUaIpEqwQNmrSmxDTZU246kWWZGbObu+Na9ocDw3CZ+f5z75y5ZwYoq6yyyipQFQAaAZwCMAJAAEwBuAzgRZS4ngXQ50DnxkcocW0AMPa4wtcCuPa4wht96AF/AI9Kp2prn1REr2vmzzWRUsxDmuiOJprQRJOK+VfF/K0iOhipqLjiYYDncatnrIIroqhi/kIR/a2ZZT7xdGWlG7wAaH3I7czyOm8NvpPoFUV0e77gc1HnbeAqgIgPvBnzhxV4HY22aubpfOFNvLB4sZcBMZPqYmIO3sT4guEV8x7FnMkHuiuRkF/Wr589fiMc9jMgzky0Os9ENryJYRuZnykk80OHD8tod7d8uXXrwwyIT/wQaOZz4/cjR+T9pqaFGGgMPPO50RaJyKLC4C8CqCwk87sWmvnc+HjpUqkKhfKBvwdgbd7wnUQbzIvIJnwBM3EbwJa84QUIaaJ0MeDn4oNI5C6AkwBeBrAfwAkAA069NzvVTwDEUYiSRNuKCf8giL4yyYJtaeZvAjHAs/H1gf+aG6sGrgRoQKzOhLlQPhs0W5FkboYt2a4+lw8dkvujo9KzfbvfuJRNA9dsGhhsa5OZyUmZnpjwNKGIeuwZYO6wvURS9fXSv2+f3NJ6unfnzusuBg5aM+B0WEVb792JxJhi/lEz39TMVzXzp2mgypqB74BKTfRbQZles0bG0mkZPnpUkvG491ii66YdRbGUjMU2aqL7eWe3oWH2gTW60dEhybo6z7GdRG+imNJEuwvZzBnodGOjjJw+LSNnzvyZXLnSfWws9g6KLUXUon1M/LxunVzYtMm3I7uweXPKZQlNJuPxegShd5csOXbWA/CvgQHJTE3JxeZmv/Xeq6PR/Q9ekER3FPNrgcADeBvATEN19Q03E5f27pXRVEr+GR+X3qYmVwOK+ZK5UNfy5eFzzAmrFcdHodzG+vnq6mHlkeXzq1dLz44dmeSKFbdcavx7CFghAMfdmoyNNTVDXiYc2BbFfM55+O8p5s9MWQ7aQIsDnHGMtDvHsyZeqqnx262+ai6giJ7oAhbhEanHgT2Wda49eybeCofdOrabXatWeX1hC1TjDqjJ/pxO5HyjqTJ1XBHddZZO39lY7DmUiPqyllC7A5/Jhs/uH35atuwplJiaPb4SfJ8NX+raBaDf+fE26PycCLyalFVWWf9z/QtkXm5wfxAMyQAAAABJRU5ErkJggg==">                
+                <br><i class='bx bx-check' style='color:#fff'  ></i>
+                <p>Repairing <br>Process</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,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">                
+                <br><i class='bx bx-refresh' style='color:#fff' ></i>
+                <p>Happy<br> Customer</p>
+            </li>
+        </ul>
+    </div>
+
+    </section>
+
+
+<!--Why choose us section-->
+
+<div class="chooseus-coantainer" id="chooseus-contanier">
+    <div class="heading">
+        <span>WHY CHOOSE US</span>
+        <h2>Keep Track Of Your Car's Status and Pricing </h2>
+        <p class="section-desc">Our system provides real-time updates on the progress of your car, including diagnostic results, repair tasks completed, and estimated time of completion.</p>
+        
+        <div class="choose-us-grid">
+            <div class="why_us_grid" >
+                <h4 class="num" data-val="23">00</h4>
+                <p>Current Projects</p>
+            </div>
+            <div class="why_us_grid" >
+                <h4 class="num" data-val="163">000</h4>
+                <p>Transparency</p></div>   
+            
+            <div class="why_us_grid">
+                <h4 class="num" data-val="368">000</h4>
+                <p>Done Projects</p>
+            </div>
+            <div class="why_us_grid" >
+                <h4 class="num" data-val="830">000</h4>
+                <p>Satisfied Customers</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!--Footer-->
+<section class="footer" id="footer">
+    <div class="footer-content">
+        <img src="imgs/logo-removebg.png">
+        <p>Welcome to <span>AUTO MAINTENANCE 
+            &  <br> REPAIR SERVICE</span> , where we're passionate about keeping your car running smoothly. With our advanced technology and skilled team.</p>
+        <div class="icons">
+            <a href="#"><i class='bx bxl-facebook-circle' undefined ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+    </div>
+    <div class="footer-content">
+        <h4>OPENING HOURS</h4>
+        <li class="day">MONDAY-FRIDAY : <li>09.00-18.00</li></li>
+        <li class="day" >SATURDAY : <li>09.00-12.45</li></li>
+        <li class="day">SUNDAY : <li>09.00-16.00</li></li>
+    </div>
+    <div class="footer-content">
+        <h4>QUICK LINKS</h4>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">FAQs</a></li>
+    </div>
+    <div class="footer-content">
+        <h4>CONTACT</h4>
+        <li><i class='bx bxs-phone' ></i>    +212 5-56478956</li>
+        <li><i class='bx bxs-phone-call'></i>    +212 6-47851212</li>
+        <li><i class='bx bxs-map'></i>    Avenue Mohamed Ben Abdellah, Av. Regragui, Rabat</li>
+    </div>
     
+</section>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
 </body>
 </html>
