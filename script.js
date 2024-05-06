@@ -1,5 +1,5 @@
 let valueDisplays=document.querySelectorAll(".num");
-let interval=500;
+let interval=4000;
 
 valueDisplays.forEach((valueDisplays) => {
     let startValue=0;
