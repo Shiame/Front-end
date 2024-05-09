@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Admin.css">
+    <title>Profile</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Admin.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="framework.css" />
+    <style>
+        @media (max-width: 767px) {
+            .profile-page .overview {
+                flex-direction: column;
+                    }
+        }
+        .profile-page{
+            margin-left: 85px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        .profile-page .avatar-box {
+        width: 300px;
+        margin-left: 20px;
+
+
+        }
+        @media (min-width: 768px) {
+        .profile-page .avatar-box {
+            border-right: 1px solid #eee;
+        }
+        }
+        .profile-page{
+            margin-left: 85px;
+            
+        }
+        .profile-page .avatar-box > img {
+        width: 120px;
+        height: 120px;
+        }
+        .profile-page .avatar-box .level {
+        height: 6px;
+        overflow: hidden;
+        margin: auto;
+        width: 70%;
+        }
+        .profile-page .avatar-box .level span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: black;
+        border-radius: 6px;
+        }
+        .profile-page .info-box .box {
+        flex-wrap: wrap;
+        border-bottom: 1px solid #eee;
+        transition: 0.3s;
+        }
+        .profile-page .info-box .box:hover {
+        background-color: #f9f9f9;
+        }
+        .profile-page .info-box .box > div {
+        min-width: 300px;
+        padding: 50px 10px 10px 50px;
+        }
+        .profile-page .info-box h4 {
+        font-weight: 800;
+        }
+            </style>
+
+
+
+</head>
+<body>
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-home' ></i>
+            <span class="text">HelloAdmin</span>
+        </a>
+        <ul class="side-menu top">
+            <li >
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li >
+                <a href="#admin_customer">
+                    <i class='bx bx-group' ></i>
+                     <span class="text">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin_mechanic.html">
+                    <i class='bx bxs-car-mechanic' ></i>
+                    <span class="text">Mechanics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#feedback">
+                    <i class='bx bx-message-rounded-dots' ></i>
+                    <span class="text">Feedbacks</span>
+                </a>
+            </li>
+            <br><br><br><br><br><br><br>
+            <li class="active">
+                <a href="admin_settings.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#log-out" class="logout">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="text"> Sign Out</span>
+                </a>
+            </li>
+        </ul>       
+    </section>
+
+    <!--Content-->
+    <section id="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="" class="nav-links">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search here ">
+                    <button type="submit" class="search-btn"><i class='bx bx-search-alt-2' ></i></button>
+                </div>
+            </form>
+            <a  href="#" class="notification">
+                <i class='bx bxs-bell' ></i>
+                <span class="num">8</span>
+            </a>
+            <a href="Admin_profile.html" class="profile">
+                <img src="imgs/people.png">
+            </a>
+
+        </nav>
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Profile</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="Admin.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevron-right' ></i>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Profile</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </main> 
+    </section>
+    
+    
+    <div class="profile-page m-20">
+      <!-- Start Overview -->
+      <div class="overview bg-white rad-10 d-flex align-center">
+        <div class="avatar-box txt-c p-20">
+          <img class="rad-half mb-10" src="imgs/avatar.png" alt="" />
+          <h3 class="m-0">Admin name</h3>
+          <p class="c-grey mt-10">-Manager-</p>
+         
+          
+        </div>
+        <div class="info-box w-full txt-c-mobile">
+          <!-- Start Information Row -->
+          <div class="box p-20 d-flex align-center">
+            <h4 class="fs-15 m-0 w-full" style="color: #ba1818;">General Information</h4>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-left: 5px;">Full Name :</span>
+              <span>admin name</span>
+            </div>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-left: 5px;">Gender :</span>
+              <span>Male</span>
+            </div>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-left: 5px;">Country :</span>
+              <span>morocco</span>
+            </div>
+           
+          </div>
+          <!-- End Information Row -->
+          <!-- Start Information Row -->
+          <div class="box p-20 d-flex align-center">
+            <h4 class=" w-full fs-15 m-0" style="color: #ba1818;" >Personal Information</h4>
+            <div class="fs-14">
+              <span class="c-grey">Email :</span>
+              <span>testtest@test.com</span>
+            </div>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-right: 1px;">Phone :</span>
+              <span>21263456789</span>
+            </div>
+            <div class="fs-14">
+              <span class="c-grey">Date Of Birth :</span>
+              <span>25/10/1982</span>
+            </div>
+           
+          </div>
+          <!-- End Information Row -->
+          <!-- Start Information Row -->
+          <div class="box p-20 d-flex align-center">
+            <h4 class=" w-full fs-15 m-0" style="color: #ba1818;">Job Information</h4>
+            <div class="fs-14">
+              <span style="color: grey; margin-left: 30px;" >Title :</span>
+              <span>Manager</span>
+            </div>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-left: 30px;">Expertise : </span>
+              <span>All</span>
+            </div>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-left: 30px;">Years Of Experience :</span>
+              <span>15+</span>
+            </div>
+          </div>
+          <!-- End Information Row -->
+          <!-- Start Information Row -->
+          <div class="box p-20 d-flex align-center">
+            <h4 class=" w-full fs-15 m-0" style="color: #ba1818;">Other Information</h4>
+            <div class="fs-14">
+              <span class="c-grey" style="margin-left: 10px;">Payment Method :</span>
+              <span>Cash</span>
+           </div>
+        </div>
+    </div>
+     </div>
+</body>
+</html>

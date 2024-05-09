@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="Admin.css">
+    <script src="Admin.js"></script>
+
+    <style>
+        /* Start Settings */
+
+                        .main2 {
+                display: flex;
+                height: 400px;
+                }
+
+                .main2 div {
+                flex: 1; /* Each div will take up equal space */
+                margin: 20px;
+                }
+                .main2 .div1 {
+                    margin-left:5.5%;
+              
+
+                }
+                .main2 .social-boxes{
+                    margin-right: 2.5%;
+                }
+                
+                
+                
+                .main2 .close-message {
+                border: 1px solid #ccc;
+                resize: none;
+                min-height: 150px;
+                }
+                .main2 .email {
+                display: inline-flex;
+                width: 36%;
+                }
+                .main2 .sec-box {
+                padding-bottom: 20px;
+                }
+                .main2 .sec-box:not(:last-of-type) {
+                border-bottom: 1px solid #eee;
+                }
+                .main2 .sec-box .button {
+                transition: 0.3s;
+                }
+                
+                .main2 .social-boxes i {
+                width: 43px;
+                height: 43px;
+                background-color: #ba1818;
+                border: 1px solid #ddd;
+                border-right: none;
+                border-radius: 6px 0 0 6px;
+                transition: 0.3s;
+                margin-left: 50px;
+                }
+                .main2 .social-boxes input {
+                height: 40px;
+                background-color: #f6f6f6;
+                border: 1px solid #ddd;
+                
+                padding-left: 60px;
+                border-radius: 0 6px 6px 0;
+                
+                }
+                .main2 .social-boxes > div i {
+                color: black;
+                }
+               
+            
+               
+                
+                .main2 .toggle-checkbox {
+                -webkit-appearance: none;
+                appearance: none;
+                display: none;
+                
+                }
+                .main2 .toggle-switch {
+                background-color: #ccc;
+                width: 78px;
+                height: 32px;
+                border-radius: 16px;
+                position: relative;
+                transition: 0.3s;
+                cursor: pointer;
+
+                }
+                .main2 .toggle-switch::before {
+                font-family: var(--fa-style-family-classic);
+                content: "\f00d";
+                font-weight: 500;
+                background-color: white;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                border-radius: 50%;
+                top: 4px;
+                left: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #aaa;
+                transition: 0.3s;
+                }
+                .main2 .toggle-checkbox:checked + .toggle-switch {
+                background-color: var(--blue-color);
+                }
+                .main2 .toggle-checkbox:checked + .toggle-switch::before {
+                content: " ";
+                left: 50px;
+                color: var(--blue-color);
+                }
+                
+            
+            
+            
+                
+    </style>
+</head>
+<body>
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-home' ></i>
+            <span class="text">HelloAdmin</span>
+        </a>
+        <ul class="side-menu top">
+            <li >
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li >
+                <a href="#admin_customer">
+                    <i class='bx bx-group' ></i>
+                     <span class="text">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin_mechanic.html">
+                    <i class='bx bxs-car-mechanic' ></i>
+                    <span class="text">Mechanics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#feedback">
+                    <i class='bx bx-message-rounded-dots' ></i>
+                    <span class="text">Feedbacks</span>
+                </a>
+            </li>
+            <br><br><br><br><br><br><br>
+            <li class="active">
+                <a href="#settings">
+                    <i class='bx bx-cog' ></i>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#log-out" class="logout">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="text"> Sign Out</span>
+                </a>
+            </li>
+        </ul>       
+    </section>
+
+    <!--Content-->
+    <section id="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="" class="nav-links">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search here ">
+                    <button type="submit" class="search-btn"><i class='bx bx-search-alt-2' ></i></button>
+                </div>
+            </form>
+            <a  href="#" class="notification">
+                <i class='bx bxs-bell' ></i>
+                <span class="num">8</span>
+            </a>
+            <a href="Admin_profile.html" class="profile">
+                <img src="imgs/people.png">
+            </a>
+
+        </nav>
+ 
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Settings</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="Admin.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevron-right' ></i>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Settings</a>
+                        </li>
+
+                    </ul>
+                </div>
+             </div> 
+          </main>     
+    </section>
+
+    <section class="main2">
+
+     
+      <!-- Start Settings Box -->
+      <div class=" div1 p-20 bg-white rad-10">
+        <h2 class="mt-0 mb-10">General Info</h2>
+        <p class="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>
+        <div class="mb-15">
+          <label class="fs-14 c-grey d-block mb-10" for="first">First Name</label>
+          <input
+            class="b-none border-ccc p-10 rad-6 d-block w-full"
+            type="text"
+            id="first"
+            placeholder="First Name"
+          />
+        </div>
+        <div class="mb-15">
+          <label class="fs-14 c-grey d-block mb-5" for="last">Last Name</label>
+          <input
+            class="b-none border-ccc p-10 rad-6 d-block w-full"
+            id="last"
+            type="text"
+            placeholder="Last Name"
+          />
+        </div>
+        <div>
+          <label class="fs-14 c-grey d-block mb-5" for="email">Email</label>
+          <input
+            class="email b-none border-ccc p-10 rad-6 w-full mr-10"
+            id="email"
+            type="email"
+            value="o@nn.sa"
+            disabled
+          />
+          <a class="c-blue" href="#">Change</a>
+        </div>
+      </div>
+      <!-- End Settings Box -->
+      <!-- Start Settings Box -->
+      <div class="p-20 bg-white rad-10">
+        <h2 class="mt-0 mb-10">Security Info</h2>
+        <p class="mt-0 mb-20 c-grey fs-15">Security Information About Your Account</p>
+        <div class="sec-box mb-15 between-flex">
+          <div>
+            <span>Password</span>
+            <p class="c-grey mt-5 mb-0 fs-13">Last Change On 25/10/2021</p>
+          </div>
+          
+            <a class="button bg-white c-blue " href="#">Change</a>
+
+         
+        </div>
+        <div class="sec-box  between-flex" style="padding-bottom: 0;">
+          <div>
+            <span>Two-Factor Authentication</span>
+            <p class="c-grey mt-5 mb-0 fs-13" >Enable/Disable The Feature</p>
+            <br><label>
+                <input class="toggle-checkbox" type="checkbox" checked />
+                <div class="toggle-switch"></div>
+            </label>
+           </div>
+          
+        </div>
+      </div>
+      <!-- End Settings Box -->
+      <!-- Start Settings Box -->
+      <div class="social-boxes p-20 bg-white rad-10">
+        <h2 class="mt-0 mb-10">Social Info</h2>
+        <p class="mt-0 mb-20 c-grey fs-15">Social Media Information</p>
+        <div class="d-flex align-center mb-15">
+          <i class="fa-brands fa-twitter center-flex c-grey"></i>
+          <input class="w-full" type="text" placeholder="Twitter Username" />
+        </div>
+        <div class="d-flex align-center mb-15">
+          <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+          <input class="w-full" type="text" placeholder="Facebook Username" />
+        </div>
+        <div class="d-flex align-center mb-15">
+          <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+          <input class="w-full" type="text" placeholder="Linkedin Username" />
+        </div>
+        <div class="d-flex align-center">
+          <i class="fa-brands fa-youtube center-flex c-grey"></i>
+          <input class="w-full" type="text" placeholder="Youtube Username" />
+        </div>
+      </div>
+      <!-- End Settings Box -->
+    </section>
+     
+</body>    
+
+</html>
