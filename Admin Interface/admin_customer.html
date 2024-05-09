@@ -88,14 +88,14 @@
                     <span class="text">Dashboard</span>
                 </a>
             </li>
-            <li >
-                <a href="admin_customer.html">
+            <li class="active">
+                <a href="#admin_customer">
                     <i class='bx bx-group' ></i>
                      <span class="text">Customers</span>
                 </a>
             </li>
-            <li class="active">
-                <a href="#admin_mechanic">
+            <li >
+                <a href="admin_mechanic.html">
                     <i class='bx bxs-car-mechanic' ></i>
                     <span class="text">Mechanics</span>
                 </a>
@@ -146,7 +146,7 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>All Mechanics</h1>
+                    <h1>Customers</h1>
                     <ul class="breadcrumb">
                         <li>
                             <a href="Admin.html">Home</a>
@@ -155,7 +155,7 @@
                             <i class='bx bx-chevron-right' ></i>
                         </li>
                         <li>
-                            <a href="#" class="active">Mechanics</a>
+                            <a href="#" class="active">Customers</a>
                         </li>
 
                     </ul>
@@ -163,13 +163,13 @@
                         <li>
                             <i class='bx bx-low-vision'></i>
                             <span class="text">
-                                <a href="#table"><h4> View All </h4></a>
+                                <a href="#table"><h4> View All Requests </h4></a>
                             </span>
                         </li>
                         <li>
                             <i class='bx bx-user-plus' ></i>
                             <span class="text">
-                                <a href="add_mechanic.html"><h4>Add Mechanic</h4></a>
+                                <a href="admin_appr_cust_request.html"><h4>Approuve Request</h4></a>
                             </span>
                         </li>
                         
@@ -177,52 +177,32 @@
                             <i class='bx bxs-edit-alt'></i>
                             <span class="text">
                                 
-                                <a href="edit_mechanic_profile.html"><h4>Edit Mechanic Profile</h4></a>
+                                <a href="admin_edit_customer_profile.html"><h4>Edit Customer Profile</h4></a>
                             </span>
                         </li>
                     </ul>
                     <div class="details1">
                         <div class="all_mechanics">
                             <div class="cardHeader">
-                                <h2>All Our Mechanics</h2>
+                                <h2>All Requests</h2>
                                 
                             </div>
 
                             <table id="table">
                                 <thead>
                                     <tr>
-                                        <td>Mechanic Name</td>
-                                        <td>Start Date</td>
-                                        <td>Expertise</td>
-                                        <td>Salary</td>
+                                        <td> Customer Name</td>
+                                        <td>Vehicle Name</td>
+                                        <td>Category</td>
+                                        <td>Vehicle Model</td>
+                                        <td>Vehicle Brand</td>
+                                        <td>Problem Description </td>
                                     </tr>
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-                                        <td>Yahya Moudrik</td>
-                                        <td>21-04-2015</td>
-                                        <td><span>General</span></td>
-                                        <td>1500DH</td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <td>Mehdi Laoukili</td>
-                                        <td>20-04-2015</td>
-                                        <td><span>Break Expert</span></td>
-                                        <td>-</td>
-                                    </tr>
-                                        <td>Tayoubi Amine</td>
-                                        <td>24-04-2018</td>
-                                        <td><span >Wheel Expert</span></td>
-                                        <td>600DH</td>
-                                   </tr>
-                                    <tr>
-                                        <td>Taha Yaou</td>
-                                        <td>21-01-2015</td>
-                                        <td><span >General</span></td>
-                                        <td>1200DH</td>
-                                    </tr>
+                                    
+                                     
                                 </tbody>
                             </table>   
                         </div>

@@ -6,41 +6,30 @@
     <title>Admin</title>
     <link rel="stylesheet" href="Admin.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <style>
-        .details1{
-                position: relative;
-                width: 100%;
-                padding-top: 20px;  
-                margin-top: 10px;
-            }
-
-            .details1 table {
+         .card-content{
                 position: relative;
                 display: inline-block;
                 min-height: 700;
                 background: var(--light);
-                padding: 30px;
+                padding:  30px 0;
                 box-shadow: 0 7px 25px rgba(0,0,0, 0.08);
                 border-radius: 20px;
                 align-items: flex-start;
                 display: grid;
                 grid-template-columns: 1fr;
-                margin-left: 40px;
-                margin-top: 25px;
-
-                
+                margin-top: 50px;        
             }
-            
-            .details1  table tr th{
-                padding: 0 60px;
-               
-                border-bottom: 0.5px solid grey;
+            .card-content tr th{
+                border-right: 1px solid black;
             }
-           .details1  table thead tr th{
+            .card-content tr th:last-child{
+                border-right: none;
+                padding-right: 15px;
+            }
+     
            
-            font-weight: 700;
-           }
-            
     </style>
 </head>
 <body>
@@ -56,13 +45,13 @@
                     <span class="text">Dashboard</span>
                 </a>
             </li>
-            <li >
+            <li class="active">
                 <a href="admin_customer.html">
                     <i class='bx bx-group' ></i>
                      <span class="text">Customers</span>
                 </a>
             </li>
-            <li class="active">
+            <li >
                 <a href="admin_mechanic.html">
                     <i class='bx bxs-car-mechanic' ></i>
                     <span class="text">Mechanics</span>
@@ -113,43 +102,40 @@
 
         <main>
             <div class="head-title">
-                    <div class="left">
-                        <h1>Edit Mechanic Profile</h1>
-                        <ul class="breadcrumb">
-                            <li>
-                                <a href="add_mechanic.html">Home</a>
-                            </li>
-                            <li>
-                                <i class='bx bx-chevron-right' ></i>
-                            </li>
-                            <li>
-                                <a href="#" class="active">Edit Profile</a>
-                            </li>
+                <div class="left">
+                    <h1 style="text-align: center;">Approuve Customer Request</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="admin_customer.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevron-right' ></i>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Requests</a>
+                        </li>
 
-                        </ul>
-                        <div class="details1">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Mobile</th>
-                                        <th>Address</th>
-                                        <th>Expertise</th>
-                                        <th>Salary</th>
-                                        <th>Update</th>
-                                        <th>Delete</th>
-                                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
+                    </ul>
+                </div>
+             </div>
+             <div class="card-content">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Customer Name</th>
+                        <th>Vehicle Category</th>
+                        <th>Problem Description</th>
+                        <th>Vehicle Model</th>
+                        <th>Approve</th>
                         
-                    </div>
-
+                        </tr>
+                    </thead>
+            </table>
             </div>
             </main>
-        </section>
-        <script src="Admin.js"></script>
-</body>
-</html>   
-                          
-     
+            </section>
+            <script src="Admin.js"></script>
+            </body>
+            </html>
+            
+                    
