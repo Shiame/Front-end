@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .details1{
+                position: relative;
+                width: 100%;
+                padding-top: 20px;  
+                margin-top: 10px;
+            }
+
+            .details1 .all_mechanics{
+                position: relative;
+                display: inline-block;
+                min-height: 700;
+                background: var(--light);
+                padding: 30px;
+                box-shadow: 0 7px 25px rgba(0,0,0, 0.08);
+                border-radius: 20px;
+                align-items: flex-start;
+                display: grid;
+                grid-template-columns: 1fr;
+                
+
+                
+            }
+            
+            .details1 .all_mechanics table tr td{
+                padding: 20px;
+                border-bottom: 0.5px solid grey;
+            }
+           .details1 .all_mechanics table thead tr td{
+            padding-top: 50px;
+            font-weight: 700;
+           }
+            .details1 .cardHeader{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+            }
+
+            .cardHeader h2{
+                font-weight:600;
+                color: var(--grona);
+            }
+            .box-info a{
+                text-decoration: none;
+                color: black;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            main .box-info{
+                width: 115%;
+                
+            }
+            main .box-info li{
+                padding:  0 0px;
+                margin: 0 20px;
+                      
+            }
+            main .box-info{
+                margin: 0 110px;
+                margin-bottom: 40px;
+            }
+            
+          
+
+    </style>
+</head>
+<body>
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-home' ></i>
+            <span class="text">HelloAdmin</span>
+        </a>
+        <ul class="side-menu top">
+            <li >
+                <a href="Admin.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li >
+                <a href="#admin_customer">
+                    <i class='bx bx-group' ></i>
+                     <span class="text">Customers</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#admin_mechanic">
+                    <i class='bx bxs-car-mechanic' ></i>
+                    <span class="text">Mechanics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#feedback">
+                    <i class='bx bx-message-rounded-dots' ></i>
+                    <span class="text">Feedbacks</span>
+                </a>
+            </li>
+            <br><br><br><br><br><br><br>
+            <li>
+                <a href="admin_settings.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#log-out" class="logout">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="text"> Sign Out</span>
+                </a>
+            </li>
+        </ul>       
+    </section>
+
+    <!--Content-->
+    <section id="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="" class="nav-links">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search here ">
+                    <button type="submit" class="search-btn"><i class='bx bx-search-alt-2' ></i></button>
+                </div>
+            </form>
+            <a  href="#" class="notification">
+                <i class='bx bxs-bell' ></i>
+                <span class="num">8</span>
+            </a>
+            <a href="Admin_profile.html" class="profile">
+                <img src="imgs/people.png">
+            </a>
+
+        </nav>
+
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>All Mechanics</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="Admin.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevron-right' ></i>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Mechanics</a>
+                        </li>
+
+                    </ul>
+                    <ul class="box-info">
+                        <li>
+                            <i class='bx bx-low-vision'></i>
+                            <span class="text">
+                                <a href="#table"><h4> View All </h4></a>
+                            </span>
+                        </li>
+                        <li>
+                            <i class='bx bx-user-plus' ></i>
+                            <span class="text">
+                                <a href="add_mechanic.html"><h4>Add Mechanic</h4></a>
+                            </span>
+                        </li>
+                        
+                        <li>
+                            <i class='bx bxs-edit-alt'></i>
+                            <span class="text">
+                                
+                                <a href="edit_mechanic_profile.html"><h4>Edit Mechanic Profile</h4></a>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="details1">
+                        <div class="all_mechanics">
+                            <div class="cardHeader">
+                                <h2>All Our Mechanics</h2>
+                                
+                            </div>
+
+                            <table id="table">
+                                <thead>
+                                    <tr>
+                                        <td>Mechanic Name</td>
+                                        <td>Start Date</td>
+                                        <td>Expertise</td>
+                                        <td>Salary</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Yahya Moudrik</td>
+                                        <td>21-04-2015</td>
+                                        <td><span>General</span></td>
+                                        <td>1500DH</td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td>Mehdi Laoukili</td>
+                                        <td>20-04-2015</td>
+                                        <td><span>Break Expert</span></td>
+                                        <td>-</td>
+                                    </tr>
+                                        <td>Tayoubi Amine</td>
+                                        <td>24-04-2018</td>
+                                        <td><span >Wheel Expert</span></td>
+                                        <td>600DH</td>
+                                   </tr>
+                                    <tr>
+                                        <td>Taha Yaou</td>
+                                        <td>21-01-2015</td>
+                                        <td><span >General</span></td>
+                                        <td>1200DH</td>
+                                    </tr>
+                                </tbody>
+                            </table>   
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                </main>
+            </section>
+
+<script src="Admin.js"></script>
+</body>
+</html>
